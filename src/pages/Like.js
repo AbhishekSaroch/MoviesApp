@@ -14,7 +14,7 @@ const Like = () => {
             ))
           }
         </div>) : (<div>
-          Oops You didnt like any Movie
+          Oops You didnt like any Movie ... Please like the movie
         </div>)
       }
     </div>
