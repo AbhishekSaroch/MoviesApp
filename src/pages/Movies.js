@@ -71,7 +71,7 @@ const Movies = () => {
         <div className="flex justify-center items-center mx-auto w-fit border border-black">
           <input
             onChange={changesearch}
-            placeholder="Search Your Movie Here "
+            placeholder="Search Any Movie Here "
             className="text-sm text-center rounded-sm font-inter px-10 py-2"
           />
         </div>

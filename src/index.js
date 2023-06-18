@@ -8,7 +8,7 @@ import store from './redux/Store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename='/MoviesApp'>
   <Provider store={store}>
     <App />
     </Provider>

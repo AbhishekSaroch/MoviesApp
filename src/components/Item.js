@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {AiFillLike,AiFillDislike} from "react-icons/ai"
 import {FcRating} from "react-icons/fc"
 import { useDispatch, useSelector } from 'react-redux';
@@ -26,7 +26,7 @@ const Item = ({movie}) => {
   
     <div className=' flex flex-col justify-center items-center gap-y-2 '>
         <div>
-            <img src={IMGPATH+movie.poster_path} className='rounded-lg'></img>
+            <img src={IMGPATH+movie.poster_path} alt='movie-logo' className='rounded-lg'></img>
             <div className='flex items-center justify-center'>
         </div>
         </div>
@@ -45,7 +45,7 @@ const Item = ({movie}) => {
             <p className='text-black text-xl flex items-center gap-x-3'><FcRating />{movie.vote_average }</p>
             {/* <p className='text-black text-xl'>{movie.release_date}</p> */}
             {
-              likedmovies.some((p)=>p.id==movie.id) ? (<div><button onClick={removefromlike}><AiFillDislike className='text-black text-2xl'/></button></div>) : (<div><button onClick={addtolike}><AiFillLike className='text-black text-2xl '/></button></div>)
+              likedmovies.some((p)=>p.id===movie.id) ? (<div><button onClick={removefromlike}><AiFillDislike className='text-black text-2xl'/></button></div>) : (<div><button onClick={addtolike}><AiFillLike className='text-black text-2xl '/></button></div>)
             }
         </div>
     </div>
