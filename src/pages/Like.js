@@ -4,10 +4,11 @@ import LikeItem from '../components/LikeItem';
 
 const Like = () => {
   const {likedmovies}=useSelector((state)=>state);
+
   return (
-    <div className=''>
+    <div className='w-11/12 mx-auto'>
       {
-        likedmovies.length>0 ?(<div className='flex flex-col gap-y-5 '>
+        likedmovies.length>0 ?(<div className='grid lg:grid-cols-5  gap-x-4 gap-y-4'>
           {
             likedmovies.map((movie,index)=>(
               <LikeItem movie={movie} key={index}/>
