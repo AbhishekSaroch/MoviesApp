@@ -14,7 +14,7 @@ const Like = () => {
               <LikeItem movie={movie} key={index}/>
             ))
           }
-        </div>) : (<div>
+        </div>) : (<div className='flex items-center justify-center lg:text-3xl font-semibold text-orange-950'>
           Oops You didnt like any Movie ... Please like the movie
         </div>)
       }
