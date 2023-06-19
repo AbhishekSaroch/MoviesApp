@@ -26,7 +26,7 @@ const Item = ({movie}) => {
   
     <div className=' flex flex-col justify-center items-center gap-y-2 '>
         <div>
-            <img src={IMGPATH+movie.poster_path} alt='movie-logo' className='rounded-lg'></img>
+            <img src={IMGPATH+movie.poster_path} alt='movie-logo'  className='rounded-lg'></img>
             <div className='flex items-center justify-center'>
         </div>
         </div>

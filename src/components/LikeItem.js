@@ -24,7 +24,7 @@ const Item = ({movie}) => {
 // }
   return (
   
-    <div className=' flex flex-col justify-center items-center gap-y-2 '>
+    <div className=' flex flex-col justify-center items-center gap-y-2 pb-5 '>
         <div>
             <img src={IMGPATH+movie.poster_path} alt='movie-logo' className='rounded-lg'></img>
             <div className='flex items-center justify-center'>

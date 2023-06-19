@@ -55,7 +55,7 @@ const Movies = () => {
     } else{
       fetchsearchmovies(page);
     }
-  },[query,page]);
+  },[query]);
   function handelpagechange(page) {
     setpage(page);
     fetchallmovies(page);
@@ -83,7 +83,7 @@ const Movies = () => {
         ) : movies.length > 0 ? (
 
 
-          <div className="grid lg:grid-cols-5  gap-x-4 gap-y-4">
+          <div className="grid lg:grid-cols-5  gap-x-4 gap-y-4 ">
             {movies.map((movie, index) => (
               <Item key={index} movie={movie} />
             ))}
